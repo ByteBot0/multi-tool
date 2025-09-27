@@ -1,0 +1,17 @@
+{
+    "tools": [
+        {
+            "name": "helpful-ping",
+            "path": "tools/helpful-ping/helpful-ping.sh",
+            "enabled": false
+        },
+        {
+            "name": "ping-graph",
+            "path": "tools/ping-graph/ping-graph.sh"
+        },
+        {
+            "name": "example",
+            "path": "tools/example/example.py"
+        }
+    ]
+}
