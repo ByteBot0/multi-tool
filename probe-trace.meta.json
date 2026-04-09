@@ -1,0 +1,21 @@
+{
+  "title": "Probe Trace — End-to-End Monitor",
+  "options": [
+    {"key":"target","label":"Target host or IP","type":"string","default":"google.com","flags":["--target"]},
+    {"key":"interval","label":"Loop interval (seconds)","type":"int","default":5,"flags":["--interval"]},
+
+    {"key":"method","label":"Probe method","type":"enum","default":"icmp","choices":["icmp","tcp","udp"],"flags":["--method"]},
+    {"key":"port","label":"TCP port (tcp method)","type":"int","default":443,"flags":["--port"]},
+    {"key":"cycles","label":"Probes per run","type":"int","default":8,"flags":["--cycles"]},
+    {"key":"probe_interval","label":"Probe interval inside mtr (seconds)","type":"string","default":"0.2","flags":["--probe-interval"]},
+    {"key":"max_hops","label":"Max hops","type":"int","default":30,"flags":["--max-hops"]},
+
+    {"key":"loss_bad","label":"Loss% considered bad","type":"int","default":50,"flags":["--loss-bad"]},
+    {"key":"loss_hard","label":"Loss% considered hard break","type":"int","default":100,"flags":["--loss-hard"]},
+
+    {"key":"save_ok_every","label":"Also save OK reports every N seconds (0 disables)","type":"int","default":0,"flags":["--save-ok-every"]},
+    {"key":"no_ui","label":"No UI redraw (one-line output)","type":"bool","default":false,"flags":["--no-ui"]},
+    {"key":"quiet","label":"Quiet output","type":"bool","default":false,"flags":["--quiet"]},
+    {"key":"log_dir","label":"Log directory","type":"string","default":"logs/probe-trace","flags":["--log-dir"]}
+  ]
+}

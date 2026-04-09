@@ -1,0 +1,9 @@
+{
+  "title": "Ping Tool Options",
+  "options": [
+    {"key":"target","label":"Target domain or IP (default: google.com)","type":"string","default":"google.com","flags":["-d"]},
+    {"key":"interval","label":"Ping interval in seconds (default: 1)","type":"int","default":1,"flags":["-i"]},
+    {"key":"color","label":"Enable colored graph","type":"bool","default":false,"flags":["--color"]},
+    {"key":"allow_local_ipv6","label":"Accept local IPv6 replies (do not treat as downtime)","type":"bool","default":false,"flags":["--allow-local-ipv6"]}
+  ]
+}

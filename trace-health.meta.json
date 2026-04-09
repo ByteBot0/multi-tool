@@ -1,0 +1,113 @@
+{
+  "title": "Trace Health Options",
+  "options": [
+    {
+      "key": "target",
+      "label": "Targets (comma-separated, or use --targets-file)",
+      "type": "string",
+      "default": "google.com,1.1.1.1",
+      "flags": [
+        "-d"
+      ]
+    },
+    {
+      "key": "family",
+      "label": "IP family",
+      "type": "enum",
+      "default": "auto",
+      "choices": [
+        "auto",
+        "v4",
+        "v6"
+      ],
+      "flags": [
+        "--family"
+      ]
+    },
+    {
+      "key": "method",
+      "label": "Probe method",
+      "type": "enum",
+      "default": "icmp",
+      "choices": [
+        "icmp",
+        "udp",
+        "tcp"
+      ],
+      "flags": [
+        "--method"
+      ]
+    },
+    {
+      "key": "port",
+      "label": "TCP port (only if method=tcp)",
+      "type": "int",
+      "default": 443,
+      "flags": [
+        "--port"
+      ]
+    },
+    {
+      "key": "max_hops",
+      "label": "Max hops",
+      "type": "int",
+      "default": 30,
+      "flags": [
+        "-m"
+      ]
+    },
+    {
+      "key": "interval",
+      "label": "Interval seconds",
+      "type": "int",
+      "default": 1,
+      "flags": [
+        "-i"
+      ]
+    },
+    {
+      "key": "cycles",
+      "label": "Cycles per report",
+      "type": "int",
+      "default": 10,
+      "flags": [
+        "-c"
+      ]
+    },
+    {
+      "label": "Run Continuously",
+      "type": "bool",
+      "default": false,
+      "flags": [
+        "--auto"
+      ]
+    },
+    {
+      "label": "Continuous Refresh Interval (seconds)",
+      "type": "int",
+      "default": 60,
+      "flag": [
+        "--auto-interval"
+      ]
+    },
+
+    {
+      "key": "dns",
+      "label": "Resolve hostnames on hops (slower)",
+      "type": "bool",
+      "default": false,
+      "flags": [
+        "--dns"
+      ]
+    },
+    {
+      "key": "prefer_mtr",
+      "label": "Prefer mtr if available",
+      "type": "bool",
+      "default": true,
+      "flags": [
+        "--prefer-mtr"
+      ]
+    }
+  ]
+}
